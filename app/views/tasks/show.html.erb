@@ -1,0 +1,8 @@
+<h2><%= @task.title %></h2>
+
+<%= @task.details %>
+
+<p>This task is <%= raw(checkbox(@task)) %></p>
+
+<%= link_to "Back to list", tasks_path %>
+<%= link_to "Edit", edit_task_path(@task)%>
